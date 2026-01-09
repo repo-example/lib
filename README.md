@@ -38,15 +38,36 @@
 
     > install [`hmm`](https://github.com/minejs-org/hmm) first.
 
-    ```bash
-    # in your terminal
-    hmm i {{tag}}
-    ```
+    - ##### Create
 
-    ```ts
-    // in your ts files
-    import { ... } from `{{tag}}`; // or: import * as {{name}} from `{{tag}}`;
-    ```
+        ```bash
+        > hmm init <name> -t lib    # This will clone this repo and make some changes to suit your lib.
+        > cd <name>                 # Go to the project directory
+        > hmm install               # Install the dependencies
+        ```
+
+    - ##### Manage
+
+        ```bash
+        > hmm build         # To build your lib
+        > hmm test          # To test  your lib
+        > hmm lint          # To lint  your lib
+        > hmm start         # To start your lib
+        > hmm publish       # To publish on `npm`
+        ```
+
+    - ##### Fianlly
+
+        ```bash
+        # to install your library after publishing on `npm`
+        hmm i {{tag}}
+        ```
+
+        ```ts
+        // in your ts files
+        import { ... } from `{{tag}}`; // or: import * as {{name}} from `{{tag}}`;
+        ```
+
 
     <div align="center"> <img src="./assets/img/line.png" alt="line" style="display: block; margin-top:20px;margin-bottom:20px;width:500px;"/> </div>
     <br>
